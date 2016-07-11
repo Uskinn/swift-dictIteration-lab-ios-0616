@@ -103,7 +103,19 @@ for (grade, score) in gradeDic {
  */
 // write your code here
 
-
+var highestGrade = 0
+    for (grade, score) in gradeDic {
+        if let highestScore = gradeDic[highestGrade] {
+            if score < highestScore {
+                highestGrade = grade
+            }
+        } else {
+            highestGrade = grade
+        }
+    }
+    if let winningScore = gradeDic[highestGrade] {
+        print("Grade \(highestGrade) got the highest score with \(winningScore)!")
+}
 
 
 /*:
