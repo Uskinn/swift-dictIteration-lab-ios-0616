@@ -17,7 +17,10 @@
  * The Beatles: _Sgt. Pepper's Lonely Hearts Club Band_
  */
 // write your code here
-
+var myBandName = ["Nirvana": "Nevermind",
+                "Blondie": "Parallel Lines",
+                "The Kinks": "Low Budget",
+                "The Beatles": "Sgt. Pepper's Lonely Hearts Club Band"]
 
 
 
@@ -26,6 +29,7 @@
  */
 // write your code here
 
+myBandName["Pixie"] = "Doolittle"
 
 
 
@@ -34,7 +38,7 @@
  */
 // write your code here
 
-
+myBandName["Kinks"] = nil
 
 
 
@@ -44,7 +48,7 @@
 let bandName = "Nirvana"
 // write your code here
 
-
+print("\(bandName)'s top-selling album was \(myBandName["Nirvana"]!)")
 
 
 /*: question5
@@ -52,13 +56,16 @@ let bandName = "Nirvana"
  */
 // write your code here
 
+for (band, album) in myBandName {
+    print("\(band)'s top-selliwng album was \(album)")
+}
 
 
 
 /*: question6
  ### 6. What type of data structure is returned when you iterate over a dictionary?
  */
-
+//strind : string
 
 
 
@@ -78,15 +85,16 @@ let bandName = "Nirvana"
  * Grade 12: B
  */
 // write your code here
-
-
+var gradeDic = [9: "B", 10: "A", 11: "C", 12: "B"]
 
 
 /*: question9
  ### 9. Print the message "Grade <Grade> got <Score>" for each grade in the dictionary you created in Question 8.
  */
 // write your code here
-
+for (grade, score) in gradeDic {
+    print("Grade \(grade) got \(score)")
+}
 
 
 
