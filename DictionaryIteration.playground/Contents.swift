@@ -47,10 +47,9 @@ myBandName["Kinks"] = nil
  */
 let bandName = "Nirvana"
 // write your code here
-
-print("\(bandName)'s top-selling album was \(myBandName["Nirvana"]!)")
-
-
+    if let album = myBandName[bandName] {
+        print("\(bandName)'s top-selling album was \(album)")
+}
 /*: question5
  ### 5. Iterate over the dictionary you created in Question 1 and print "<Band>'s top-selling album was <Album>" for each item in the dictionary.
  */
